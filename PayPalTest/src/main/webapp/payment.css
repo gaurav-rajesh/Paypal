@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #ffffff;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+   .logo-img{
+    width: 23%;
+    margin-left: 15%;
+    margin-top: 0;
+  }
+   .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #203764;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  .search-container input[type="text"] {
+    border: none;
+    padding: 7px;
+    font-size: 1em;
+    width: 20rem;
+    border-radius: 5px 0 0 5px;
+    
+  }
+  
+  .search-container button {
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #203764;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    .search-container{
+    position: absolute;
+    left:24rem;
+  }
+    .rightside{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    color: #203764;
+    padding-right: 6rem;
+  }
+  .rightside span{
+    padding: 0 20px 0 20px;
+  }
+  .rightside a{
+    color: #203764;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+.rightside a:hover{
+    text-decoration: underline;
+    color:rgb(56, 96, 255);
+}
+ .navbar {
+    display: flex;
+    padding: 0 0 0 0rem;
+    background-color: #203764;
+    color: #fff;
+  }
+  
+  .navbar a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    float: left;
+
+  }
+  .navbar a:hover{
+    text-decoration: underline;
+    background-color: rgb(56, 96, 255);
+  }
+  h1{
+  text-align:center;
+  padding-bottom: 20px;
+  }
+  
+  /*checkout section */
+  
+
+
+
+.bodycontainer {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d8e1edb3;
+  
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.btn-paypal {
+  background-color: #0079c1;
+  border-color: #0079c1;
+  color: #fff;
+}
+
+.btn-paypal:hover {
+  background-color: #005ea8;
+  border-color: #005ea8;
+  color: #fff;
+}
+
+.btn-paypal:focus, .btn-paypal.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 121, 193, 0.5);
+}
+
+.card-form {
+  display: none;
+}
+
+.card-form.show {
+  display: block;
+}
+
+.input-text{
+    position:relative;
+    margin-top:30px;
+}
+input[type="text"]{
+    height:40px;
+    width:100%;
+    border-radius:5px;
+    border:none;
+    outline:0;
+    border-bottom:1px solid #b9c7da;
+    padding:0 10px;
+    box-sizing:border-box;
+}
+.input-text span{
+    position:absolute;
+    left:10px;
+    top:-13px;
+    font-size:12px;
+    font-weight:700;
+} 
+.input-div{
+    display:flex;
+    gap:10px;
+   width:100%;
+}
+
+.input-div .input-text{
+    width:50%;
+}
+/*.cvvtext{*/
+/*    width:50%;*/
+/*}*/ 
+.button{
+    margin-top:30px;
+}
+.d-none{
+    display:none !important;
+}
+.button button{
+    height:40px;
+    width:120px;
+    border:none;
+    border-radius:50px;
+    color:#fff;
+    font-size:12px;
+    background-color:#4597ff;
+    cursor:pointer;
+    transition:all 0.5s;
+}
+.button button:hover{
+    background-color:blue;
+}
+
+
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portingo | Digital Asset Marketplace</title>
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <link rel="shortcut icon" type="image/x-icon" href="1676232223.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  <div class="top-container">
+      
+      <div class="logo">
+        <img class="logo-img" src="portingologo.jpg" alt="logo-img"></div>
+      
+      <!-- Search bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search for your favourite asset here    ">
+        <button>Go</button>
+      </div>
+      <div class="rightside">
+        <span>50 VISITORS</span> 
+        <span>HI, USER</span>
+        <a href="#">MY ACCOUNT</a>
+        <a href="#">LOGOUT</a>
+
+      </div>
+    </div>
+    
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <a href="https://portingo.com/account/overview">ACCOUNT OVERVIEW</a>
+      <a href="https://portingo.com/editors-choice">EDITOR'S CHOICE</a>
+      <a href="https://portingo.com/watchlist">WATCH LIST</a>
+      <a href="#">BUY ASSETS</a>
+      <a href="#">SELL ASSETS</a>
+      <a href="https://portingo.com/support">SUPPORT</a>
+    </div>
+    
+    <!-- checkout section -->
+<div class="bodycontainer">
+        <h1>Checkout Summary</h1>
+
+  <form action="authorize_payment" method="post">
+    <div class="form-group">
+      <label for="product">Domain:</label>
+      <input type="text" id="product" name="product" placeholder="Enter domain name">
+    </div>
+    <div class="form-group">
+      <label for="subtotal">Subtotal:</label>
+      <input type="text" id="subtotal" name="subtotal" placeholder="Enter subtotal">
+    </div>
+    <div class="form-group">
+      <label for="shipping">Shipping:</label>
+      <input type="text" id="shipping" name="shipping" placeholder="Enter shipping">
+    </div>
+    <div class="form-group">
+      <label for="tax">Tax:</label>
+      <input type="text" id="tax" name="tax" placeholder="Enter tax">
+    </div>
+    <div class="form-group">
+      <label for="total">Total:</label>
+      <input type="text" id="total" name="total" placeholder="Enter total">
+    </div>
+
+    <button type="button" class="button-30" role="button" onclick="toggleCardForm()">Pay with card</button>
+  	<button type="submit" class="button-29" role="button">Pay with PayPal</button>
+  </form>
+
+  <br>
+
+  <script>
+  const searchParams = new URLSearchParams(window.location.search);
+  const number = searchParams.get("$");
+  document.getElementById("subtotal").value = number;
+</script>
+
+  <div id="card-form" style="display:none;">
+                <h3>Payment details</h3>
+                <div class="input-text">
+                    <input type="text" id="user_name_input"  placeholder="Username" >
+                    <span>Cardholder name</span>
+                </div>
+                <div class="input-text">
+                    <input type="text" id="user_card_number_input" placeholder="0000 0000 0000 0000"  data-slots="0" data-accept="\d">
+                    <span>Card number</span>
+                </div> 
+                <div class="input-div">
+                    <div class="input-text">
+                       <input type="text" placeholder="MM/YYYY" data-slots="MY" >
+                       <span>Valid upto</span>
+                    </div>
+                    <div class="input-text ">
+                       <input type="text" placeholder="000" data-slots="0" data-accept="\d" maxlength="3" >
+                       <span>CVV</span>
+                    </div>
+                </div> 
+                <div class="button">
+                    <button class="click-pay">Pay</button>
+                </div>
+            </div>
+
+  <script>
+  function toggleCardForm() {
+	  var cardForm = document.getElementById("card-form");
+	  if (cardForm.style.display === "none") {
+	    cardForm.style.display = "block";
+	    cardForm.scrollIntoView({ behavior: 'smooth' });
+	  } else {
+	    cardForm.style.display = "none";
+	  }
+	}
+
+  </script>
+        
+
+    
+    </body>

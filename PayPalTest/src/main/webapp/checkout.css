@@ -1,0 +1,207 @@
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #ffffff;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #203764;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  .search-container input[type="text"] {
+    border: none;
+    padding: 7px;
+    font-size: 1em;
+    width: 20rem;
+    border-radius: 5px 0 0 5px;
+    
+  }
+  
+  .search-container button {
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #203764;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  .navbar {
+    display: flex;
+    padding: 0 0 0 8rem;
+    background-color: #203764;
+    color: #fff;
+  }
+  
+  .navbar a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    float: left;
+
+  }
+  .logo-img{
+    width: 23%;
+    margin-left: 15%;
+    margin-top: 0;
+  }
+  .search-container{
+    position: absolute;
+    left:24rem;
+  }
+
+  .navbar a:hover{
+    text-decoration: underline;
+    background-color: rgb(56, 96, 255);
+  }
+
+  .rightside{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    color: #203764;
+    padding-right: 6rem;
+  }
+  .rightside span{
+    padding: 0 20px 0 20px;
+  }
+  .rightside a{
+    color: #203764;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+.rightside a:hover{
+    text-decoration: underline;
+    color:rgb(56, 96, 255);
+}
+body{
+    margin: 0;
+}
+
+.sell-logo{
+    width: 19%;
+    float: left;
+    margin-right: 8rem;
+}
+.sell-page{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    border-color: gray;
+    width:60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+hr{
+    width: 95%;
+    color: black;
+    
+}
+h1{
+    margin: 1rem 5rem;
+    text-align: center;
+    font-weight: normal;
+    color: #203764;
+}
+h3{
+    color: rgb(206, 61, 61);
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+.sell-page p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info{
+    font-size: 80%;
+    margin-bottom: 3rem;
+}
+th{
+    text-align: left;
+    padding: 5px 70px 5px 20px;
+    font-size: 90%;
+    font-weight: normal;
+    color: #203764;
+}
+td{
+    font-size: 90%;
+    padding-left: 2rem;
+    font-weight: normal;
+}
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+  .sell-page a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  input[type="number"] {
+    height: 40px;
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    border: 1px solid #b9c7da;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
